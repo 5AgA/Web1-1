@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 17</title>
+    <style>
+        img {
+            width: 286px;
+            height: 249px;
+        }
+        #card {
+            display: flex;
+            align-content:center;
+            
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+            padding-top: 10%;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: navy;
+            }
+            #container {
+                width: 320px;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-top: 50px;
+                
+            }
+            #card {
+                width: 300px;
+                height: 500px;
+                background-color: white;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            #words {
+                width: 200px;
+            }
+            p {
+                font-size: 25px;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1439px) {
+            body {
+                background-color: red;
+            }
+            #container {
+                width: 570px;
+                flex-direction: row;
+                margin-top: 40px;
+            }
+            #card {
+                width: 550px;
+                height: 250px;
+                background-color: white;
+                flex-direction: row;
+                margin-bottom: 20px; 
+            }
+            #words {
+                width: 200px;
+            }
+            p {
+                padding: 40px 50px 10px 50px;
+                font-size: 22px
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (min-width:1440px) {
+            body {
+                background-color: green;
+            }
+            #container {
+                width: 1140px;
+                flex-direction: row;
+                margin-top: 40px;
+            }
+            #card {
+                width: 550px;
+                height: 250px;
+                background-color: white;
+                flex-direction: row;
+                margin: 0 20px 20px 0;
+            }
+            #words {
+                width: 200px;
+            }
+            p {
+                font-size: 22px;
+                padding: 40px 70px 0 30px;
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <img src="images/명언1.png">
+            <div class="words">
+                <p>모든 일에는 타이밍이 중요하다.<br><span>- Ray Kurzweil</span></p>
+            </div>
+        </div>
+        <div id="card">
+            <img src="images/명언2.png">
+            <div class="words">
+                <p>한번 포기하면 습관이 된다. 절대 포기하지 말아라<br><span>- Michael Jefferey Jordan</span></p>
+            </div>
+        </div>
+        <div id="card">
+            <img src="images/명언3.png">
+            <div class="words">
+                <p>다른 사람의 좋은 습관을 내 습관으로 만들어라.<br><span>- Bill Gates</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

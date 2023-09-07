@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">	
+	<title>Practice37</title>	
+    <style>
+        li:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해 보세요. </p>
+    <p>공부가 끝난 것은 클릭해서 삭제할 수 있습니다.</p>
+    <form action="">
+      <input type="text" id="subject" placeholder="공부할 주제 입력" autofocus>
+      <button onclick="newRegister(); return false;">추가</button>
+    </form>
+    <hr>  
+    <ol id="itemList"> 
+    </ol>  
+  </div>
+  <script>
+      function newRegister() {
+          var newItem = document.createElement("li");
+          var subject = document.getElementById('subject');
+          var textNode = document.createTextNode(subject.value);
+          newItem.appendChild(textNode);
+
+          var itemList = document.getElementById('itemList');
+          itemList.appendChild(newItem);
+
+          subject.value="";
+
+          var items = document.querySelectorAll("li");
+          
+          for(var i = 0; i < items.length; i++)
+          {
+              items[i].addEventListener("click", function() {
+                  if(this.parentNode)
+                  this.parentNode.removeChild(this);
+              })
+        }
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!--컴퓨터학과/20220783/오은아-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표</title>
+    <style>
+        table {
+            width:40%;
+            border:1px black solid;
+            border-collapse:collapse;
+            margin:auto;
+            margin-top:30px;
+            box-shadow: 2px -2px 5px blue
+        }
+        th, td {
+            height:60px;
+            width:16%;
+            border: 1px black dotted;
+            text-align:center;
+        }
+        caption {
+            caption-side:bottom;
+            text-align:right;
+            font-weight:bold;
+            text-decoration-line:underline;
+        }
+        th {
+            color:  blue;
+            font-weight:bold;
+            font-size:1.2em;
+            border: 1px black dotted;
+        }
+        .foot {
+            color:red;
+            font-style:italic;
+        }
+        .num {
+            width:10%; 
+            
+        }
+    </style>
+        
+</head>
+<body>
+    <section>
+        <table>
+        <caption>[표1] 나의 시간표</caption>
+            <thead>
+                <th class="num"> </th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+
+                <tr>
+                    <th class="num">1</th>
+                    <td>동덕ARETE</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th class="num"">2</th>
+                    <td>Everyday English</td>
+                    <td>Everyday English</td>
+                    <td>통계학입문</td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th class="num">3</th>
+                    <td>통계학입문</td>
+                    <td> </td>
+                    <td rowspan="2">프로그래밍<br>논리의이해</td>
+                    <td> </td>
+                    <td>동덕ARETE</td>
+                </tr>
+                <tr>
+                    <th class="num">4</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th class="num">5</th>
+                    <td rowspan="2">인터넷<br>프로그래밍</td>
+                    <td>행정법총론</td>
+                    <td> </td>
+                    <td>행정법총론</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th class="num">6</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </thead>
+            <tfoot><th colspan="6" class="foot">이번 학기에도 최선을 다하자</th></tfoot>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/practice35.css" rel="stylesheet">
+    <title>Practice35</title>
+    <style>
+        img {
+            border: 1px solid;
+        }
+        .small {
+            width: 50px;
+            height: 50px;
+        }
+        #big {
+            width: 200px;
+            height: 200px;
+        }
+        #small-pic img:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <img src="images/img1.png" id="big">
+        </div>
+        <div id="small-pic">
+            <img src="images/img1.png" class="small" onclick="changeImg(this)" title="img1">
+            <img src="images/img2.png" class="small" onclick="changeImg(this)" title="img2">
+            <img src="images/img3.png" class="small" onclick="changeImg(this)" title="img3">
+        </div>        
+    </div> 
+    <script>
+        function changeImg(obj) {
+            var img_big = document.getElementById("big");
+            var img_path = obj.getAttribute('src');
+            img_big.setAttribute('src', img_path);
+            //img_big.src = obj.src;
+            //img_big.alt = "큰 이미지";
+            //img_big.title = "이미지 확대";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>practice29</title>
+	<link href="./css/practice29.css" rel="stylesheet">
+    <script>
+        //입력상자를 선택하면
+        function myFunction1() {
+        document.querySelector("input").value = "자바스크립트";
+        }
+        //포커스 받음
+        function changeBg1(inputBox) {
+        inputBox.style.background = "yellow";
+        }
+        //키 누름
+        function myFunction2(e) {
+        if (e.keyCode == 13) //Enter키
+        alert("키보드가 눌림");
+        }
+
+    </script>
+</head>
+<body >
+	<ul>
+		<li><a href="#" onclick="changeBg('green')">Green</a></li>
+		<li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+		<li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+	</ul>		
+	<div id="result"></div>
+
+    <script>
+        function changeBg(color){
+            var result = document.querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+    </script>
+    블록 선택: <input type="text" value="Hello world!" 
+    onselect="myFunction1()" onfocus="changeBg1(this)">
+    <br>
+    키보드 누름: <input type="text" onkeypress="myFunction2(event)">
+</body>
+</html>  

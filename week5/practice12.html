@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice12</title>
+    <link href="css/style2.css" type="text/css" rel="stylesheet"> 
+    <style>
+        /* 내부 스타일 시트 */
+        ul{
+            list-style-type: none;
+            font-style:italic;
+        }
+        div h1{
+            text-align:center;
+            color:red;
+            font-family:궁서체;
+            text-shadow:3px 3px 3px black, 5px 5px 3px yellow;           /*(오아래+, 왼위-)*/
+        }
+        span{
+            color:rgb(208,30,20);
+            font-size:1.2em;
+            font-weight:800;            /*400이 기본*/
+            font-style:normal;
+        }
+        .odd{       /* 클래스 선택자 */
+            text-decoration:overline;
+        }
+        .even{
+            text-decoration:underline;
+        }
+        #one{background-color:yellow;}
+        h1, #one{
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>최신 웹 디자인 트렌드</h1>
+    <div>
+        <ul>
+            <h1>어떤 것이 좋을까요?</h1>
+            <li><span class="odd">반응형 웹 디자인</span> - 다양한 화면 크기에 최적화하다</li>
+            <li><span class="even">플랫 디자인</span> - 입체에서 평면으로</li>
+            <li><span class="odd">풀스크린 배경</span> - 콘텐츠에 집중</li>
+            <li><span class="even" id="one">원 페이지 사이트</span> - 한 페이지에 모든 내용을 담다</li>
+            <li><span class="odd">패럴랙스 스크롤링</span> - 동적인 효과로 강한 인상을!</li>
+            <li><span class="even">웹 폰트</span> - 웹 타이포그래피를 받쳐주는 기술</li>
+        </ul>
+    </div>
+    <div>
+        <iframe src="https://www.dongduk.ac.kr/kor/main.do" width="500px" height="300px"></iframe>
+    </div>
+</body>
+</html>

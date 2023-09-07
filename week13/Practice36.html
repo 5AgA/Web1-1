@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice36</title>
+  <style>
+    #container {
+      width:300px;
+      margin:10px auto;
+    }
+  </style>
+</head>
+<body>
+	<div id="container">
+		<img src="images/sad.png" id="cover">
+    </div> 
+    <script>
+      var imgObj = document.getElementById('cover');
+
+      imgObj.onclick = function(event) {
+        var str = "";
+        str += "이벤트 이름: " +  event.type;
+        str += "\n이벤트 발생 위치: " + event.clientX + "," + event.clientY;
+        str += "\n문서기준 이벤트 발생 위치: " + event.pageX + "," + event.pageY;
+        str += "\n화면기준 이벤트 발생 위치: " + event.screenX + "," + event.screenY;
+        alert(str);
+      }
+      function changePic() {
+        imgObj.src = "images/smile.png";
+      }
+      function originalPic() {
+        imgObj.src = "images/sad.png";
+      }
+
+      imgObj.addEventListener("mouseover", changePic);
+      imgObj.addEventListener("mouseout", originalPic);
+
+      var newTag = document.createElement("h1");
+      var textNode = document.createTextNode("끝내자");
+      newTag.appendChild(textNode);
+
+      var divTag = document.querySelector('#container');
+      divTag.appendChild(newTag);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고급 선택자</title>
+    <style>
+        p {
+            font-size: 20px;
+        }
+        section > p {
+            color: blue;
+        }
+        section p {
+            background-color: yellow;
+        }
+        img {
+            width: 100px; height: 100px;
+        }
+        img[alt]{
+            border: 5px solid green;
+        }
+        img[alt="배경"]{
+            display: none;
+        }
+        img[src^="./bg"]{
+            width: 400px;
+        }
+        img[src$=".png"]{
+            width: 50px; 
+            height: 200px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:link {
+            color: black;
+        }
+        a:visited {
+            color:black;
+        }
+        a:hover {
+            background-color: green;
+            color: white;
+        }
+        a:active {
+            background-color:red;
+            font-size: 20px;
+        }
+        img:hover {
+            display: none;
+        }
+        li:first-child {
+            text-decoration: underline;
+        }
+        li:nth-child(2n) {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p>고급 선택자란?</p>
+    <section>
+        <p>고급 선택자의 종류</p>
+        <ul>
+            <li>하위(자손) 선택자</li>
+            <li>자식 선택자</li>
+            <li>속성 선택자</li>
+            <li>가상 클래스</li>
+            <li>가상 요소</li>
+        </ul>
+        <a href="select2.html">선택자</a>
+        <a href="http://www.dongduk.ac.kr">학교</a>
+        <div>
+            <p>속성 선택자</p>
+            <img src="./bg1.png">
+            <img src="./bg2.png" alt="배경">
+            <img src="./black.png" alt="">
+        </div>
+    </section>
+</body>
+</html>

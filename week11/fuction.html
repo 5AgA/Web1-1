@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수연습</title>
+    <script>
+        /*function isPrime(num)        //보통 헤드에 정의
+        {
+            for(var i = 2; i < n; i++)
+            {
+                if (num % i == 0)
+                    return false;
+            }
+            return true;
+        } */
+        
+        var isPrime = function(num)
+        {
+            for(var i = 2; i < n; i++)
+            {
+                if (num % i == 0)
+                    return false;
+            }
+            return true;
+        }
+
+        var print_prime = function(su)
+        {
+            if (isPrime(su))
+                document.write(su + "는(은) 소수이다<br>");
+            else
+                document.write(su + "는(은) 소수가 아니다<br>");
+
+        }
+    </script>
+</head>
+<body>
+    <h1>30분에 갈래?</h1>
+    <script>
+        //난수 생성
+        //var  n = Math.random() or Math.floor()
+        var n = parseInt(Math.random() * 100) + 1;
+        if (isPrime(n))
+            document.write( n + "는(은) 소수이다<br>");
+        else
+            document.write( n + "는(은) 소수가 아니다<br>");
+        
+        print_prime(1234567);
+    </script>
+</body>
+</html>

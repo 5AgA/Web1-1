@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice32</title>
+    <script>
+        const timer = function bgcolor() {
+        var current = new Date(); 
+        if(current.getSeconds() % 2 == 0)
+            document.body.style.backgroundColor = "yellow";
+        else
+            document.body.style.backgroundColor = "lightskyblue";
+            
+            document.write("<h3>방문 시간에 따라 배경색 변경</h3><p>페이지 방문 초시간이 짝수이면 배경색이 yellow, 홀수이면 lightblue로 설정<br></p>")
+            document.write(current.getHours(), "시: ");
+            document.write(current.getMinutes(), "분: ");
+            document.write(current.getSeconds(), "초<br>");
+            
+        }
+    </script>
+</head>
+<body>
+    <script>setInterval(timer, 1000);</script>
+</body>
+</html>

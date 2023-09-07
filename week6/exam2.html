@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델연습</title>
+    <style>
+        #container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            border: 1px solid lightgray;                              /*텍스트 얼라인 안먹힐 때 사용 // 오토 = 나머지에서 반씩 나눠 갖기*/
+            position: relative;                                         /*자기 기준*/
+        }
+        .box1, .box2, .box3 {
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        a {
+            border: 1px solid purple;
+            display: inline-block;
+            margin: 30px;
+            padding: 30px 50px;
+        }                                                               /*크기조절 안됨 마진이랑 패딩 이용*/
+        img {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin-right: 50px;
+        }
+        .box1 {
+            border-style: groove;
+            border-width: 5px;
+            border-color: red;
+            border-radius: 50%;
+            text-align: center;
+            position: fixed;                                           /*전체 스크롤하든 항상 같은 자리에 있길 바랄 때*/
+            left: 300px;
+            top: -50px;
+        }
+        .box2 {
+            border-left-style: dotted;
+            border-right-style: solid;
+            border-width: 0px 5px 0px 30px;  
+            border-left-color: green;
+            border-right-color: lightgreen;
+            margin-left: 10px;                                          /*외부 - 내부(그룹) - 내부(단독)*/
+        }
+        .box3 {
+            border: 2px solid blue;                                  /*가장 간단한 방법*/
+            border-top-left-radius: 30px;
+            border-top-right-radius: 50px;
+            /*텍스트가 속도가 빠름*/
+            position: absolute;                                        /*부모 기준*/
+            left: 30px;
+            top: 50px;
+        }
+        h1 {
+            clear: both;
+        }
+        table {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid;
+        }
+        caption {
+            caption-side: bottom;
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <a href="#">네이버</a>
+        <a href="#">동덕여자대학교</a>
+        <a href="#">유튜브</a>
+    </div>
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAzMzFfOTcg%2FMDAxNjQ4Njk2MjcyMjcx.29GY29u7APDnKE6vwq-G-MdnIHxj2Smg5eb8WDQU3Bgg.PcwWwxTecif7LcowbE5_eA1lMfWVl17ikbONGsr1htYg.JPEG.hakppp%2FIMG_0828.jpg&type=a340">
+    <p>남양주 천마산에서 발견한 꽃</p>
+    <h1>오늘 수업 끝~~~</h1>
+    <table>
+        <caption>표1</caption>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

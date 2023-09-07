@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>practice30</title>
+    <script>
+        function clearText(inputBox) {
+            inputBox.style.background = "yellow";
+            document.querySelector("input").value = "꽃말: 생명, 행운";
+        }
+        function setName(inputBox) {
+            inputBox.style.background = "white";
+            document.querySelector("input").value = "꽃이름: 해바라기";
+        }
+        function showDetail() {
+            document.querySelector('#desc').style.display = "block";
+            document.querySelector('#open').style.display = "none";
+        }
+        function hideDetail() {
+            document.querySelector('#desc').style.display = "none";
+            document.querySelector('#open').style.display = "block";
+        }
+    </script>
+</head>
+<body>
+	<div id="item">
+		<input type="text" size="41" value="꽃말과 꽃이름은 무엇일까요?" onfocus="clearText(this)" onselect="setName(this)"><br>
+		<img src="images/해바라기.jpg" alt="">
+		<button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+		<div id="desc" class="detail">
+			<h4>해바라기</h4>
+			<p>국화과에 속하는 일년생 초본식물. 꽃이 해를 따라 도는 것으로 오인해서 해바라기라고 하였다. 중앙아메리카 원산으로 우리나라에는 개화기에 들어왔는데, 번식력이 강해서 각처에서 자생하고 있다. 종자를 식용하며, 한방에서는 줄기속을 약재로 쓴다.
+				[네이버 지식백과] 해바라기 (한국민족문화대백과, 한국학중앙연구원)</p>
+			<button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+		</div>
+	</div>	
+</body>
+</html>  

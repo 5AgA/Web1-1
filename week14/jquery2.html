@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery1</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div>
+        <p>메시지: 마지막 수업입니다.</p>
+        <img src="images/smile.png">
+        <img src="images/sad.png">
+    </div>
+    <button>메시지 삭제</button>
+    <input type="button" value="이미지삭제" id="btn1">
+    <input type="button" value="메시지보기" id="btn2">
+    <input type="button" value="이미지보기" id="btn3">
+    <input type="button" value="이미지접기" id="btn4">
+    <script>
+        $("button").click(function(){
+            $("p").fadeOut(2000);
+        });
+        $("#btn2").click(function(){
+            $("p").fadeIn(2000);
+        });
+        $("#btn1").click(function(){
+            $("[src='images/smile.png']").fadeTo(1000, 0.2);
+        });
+        $("#btn3").click(function(){
+            $("[src='images/smile.png']").fadeTo(1000);
+        });
+        $("#btn4").click(function(){
+            $("div").slideToggle(3000);
+        });
+    </script>
+</body>
+</html>

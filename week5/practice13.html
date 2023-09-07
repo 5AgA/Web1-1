@@ -1,0 +1,106 @@
+<!--컴퓨터학과/20220783/오은아-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="오은아">
+        <meta name="keywords" content="5주 실습 및 과제">
+        <meta name="description" content="시맨틱 태그를 사용하여 html을 작성하자">
+        <meta http-equiv="refresh" content="20">
+        <title>practice13</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style>
+            a{
+                text-decoration-line:none;
+            }
+            h1 {
+                font-size:2em;
+                font-family:"나눔손글씨펜", "궁서체";
+                text-align:center;
+                text-shadow: 2px 2px 2px rgb(255, 166, 0,0.7);
+            }
+            h3 {
+                text-transform:uppercase;
+                font-style:italic;
+                text-decoration-line:underline;
+            }
+            ul{
+                text-decoration-line:none;
+                list-style-type: circle;
+            }
+            .me{
+                line-height:2em;
+                text-indent:30px;
+                color:#ff00ff;
+            }
+            span {
+                font-family:"궁서체";
+                color:rgb(255,0,0);
+                font-weight:bold;
+                font-size:1.1em;
+            }
+            ol {
+                list-style-type:upper-roman;
+                list-style-position:inside;
+            }
+            dt {
+                font-weight:bold;
+                color:orange;
+            }
+            footer {
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>(로고 작성 예정)은아의 블로그</h1>
+            <nav>
+                <h3>메뉴(menu)</h3>
+                <ul>
+                    <li><a href="#나는">나는...</a></li>
+                    <li><a href="#버킷리스트">버킷 리스트</a></li>
+                    <li><a href="#전공용어">전공 용어 사전</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h3 id="나는">나는...(me)</h3>
+                <p class="me">나의 이름은 <strong>오은아</strong>이며, 2003년생 출생에, <small>(2022년 기준 20세)</small> 특이하게 <u>만우절</u><small>(4월 1일)</small>에 태어났다.
+                    <strong>mbti</strong>는 <strong>istj</strong>로 과거에는 infp 였다. <s>본 작성자는 mbti를 믿지 않는다</s>.
+                    내가 좋아하는 음식은 초밥으로, <em>회와 스테이크 중 고르라 하면 회를 고를 정도로 회를 좋아함</em>.
+                    내가 좋아하는 방정식은 포그슨 방정식이다. 100<sup>1/5(m<sub>2</sub>-m<sub>1</sub>)</sup>=10<sup>2/5(m<sub>2</sub>-m<sub>1</sub>)</sup>=l<sub>1</sub>/l<sub>2</sub></p>
+            </section>
+            <hr>
+            <section>
+                <h3 id="버킷리스트">버킷리스트(bucket_list)</h3>
+                <p>이번 학기에 하고 싶은 것을 <span>순서대로 3개</span>만 작성하시오.</p>
+                <ol>
+                    <li>C언어 마스터 하기</li>
+                    <li>코로나 안 걸리기</li>
+                    <li>과 친구 사귀기</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h3 id="전공용어">전공 용어 사전(term)</h3>
+                <p>전공관련 용어 3개를 설명하시오.</p>
+                <dl>
+                    <dt>TCP</dt>
+                    <dd>서로 다른 시스템을 가진 컴퓨터들을 서로 연결하고, 데이터를 전송하는 데 사용하는 통신 프로토콜들의 집합임.</dd>
+                    <dt>UDP</dt>
+                    <dd>인터넷에서 정보를 주고 받을 때, 서로 주고 받는 형식이 아닌 한쪽에서 일방적으로 보내는 방식의 통신 프로토콜임.</dd>
+                    <dt>XML</dt>
+                    <dd>인터넷 웹페이지를 만드는 HTML을 획기적으로 개선하여 만든 언어임. 홈페이지 구축기능, 검색기능 등이 향상되었고, 웹 페이지의 추가와 작성이 편리해짐.</dd>
+                </dl>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <i>COPYRIGHT</i> 2022 <a href="https://www.dongduk.ac.kr/kor/main.do">Dongduk Woman UNIVERSITY</a><br>TEL. 02-940-4000
+        </footer>
+    </body>
+    
+</html>

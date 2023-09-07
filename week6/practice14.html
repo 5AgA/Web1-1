@@ -1,0 +1,124 @@
+<!--컴퓨터학과/20220783/오은아-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice14.html</title>
+    <style>
+        #logo {
+            position: fixed;
+            top: 10px;
+            left: 200px;
+            padding: 10px;
+        }
+        #tour, #flower {
+            width: 40%;
+            padding: 10px;
+        }
+        #tour {
+            float: right;
+        }
+        #flower {
+            float: left;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            position: relative;
+        }
+        h1 {
+            text-shadow: -1px 1px 20px #0ff;
+            margin-bottom:50px;
+            color:#00f;
+            text-align:right;
+            padding-right: 43%;
+            position: relative;
+        }
+
+        .box2, .box3 {
+            position: absolute;
+            width: 45%;
+            height: 300px;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        .box2 {
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        .box3 {
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+            clear: both;
+            right: 0px;
+        }
+        .box1 {
+            width: 100%;
+            margin-left: 0px;
+            margin-bottom: 50px;
+            border: red 1px dashed;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        ul {
+            text-align: right;
+            list-style-type: none;
+            padding-bottom: 15px;
+            padding-right: 3%;
+        }
+        li {
+            display: inline-block;
+            width: 200px;
+            margin-right: 50px;
+            border-top: 1px solid green;
+            border-bottom: 4px solid green;
+            padding: 5px 0px;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+        p {
+            text-indent: 10px;
+            line-height: 1.5em;
+        }
+        .text {
+            width:fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>나의 학교소개</h1>
+            <nav>
+                <ul>
+                    <li>로고</li>
+                    <li>사이버캠퍼스투어</li>
+                    <li>배너</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="box1">
+                <p class="text">http://www.dongduk.ac.kr의 왼쪽에 보이는 학교 로고를 다운로드하여 images폴더에 저장한 후 이미지 삽입</p>
+                <a href="http://www.dongduk.ac.kr">
+                    <img id="logo" src="images/학교로고.png" alt="학교로고">
+                </a>
+            </div>
+            <div class="box2">
+                <img id="tour" src="사이버캠퍼스투어.jpg" width="40%"  alt="사이버캠퍼스투어">
+                <p>http://www.dongdu,.ac.kr의 아래 보이는 사이버캠퍼스투어 이미지를 다운로드하여 week6폴더에 저장한 후<br>
+                width="40%", height="40%" 크기로 이미지 삽입</p>
+            </div>
+            <div class="box3">
+                <img id="flower" src="https://www.dongduk.ac.kr/resources/kor/img/vi07.jpg" width="40%" alt="학교교화-목화">
+                <p>학교 첫화면 배너에 보이는 이미지 중 하나의 주소로 이미지 삽입<br>
+                크기는 width="40%"으로 지정</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

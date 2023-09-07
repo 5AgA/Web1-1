@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+</head>
+<body>
+    <h1>주문하기</h1>
+    <form name="f3" method="get" action="order.jsp">
+        <fieldset>
+                <legend>상품 선택</legend>
+                <h4>주문할 상품을 선택해 주세요.</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="product" value="P_1">상품1</label><input type="number" name="cnt1" max="10" min="0">개 <small>(최대 10개)</small></li>
+                    <li><label><input type="checkbox" name="product" value="P_2">상품2</label><input type="number" name="cnt2" max="7"  min="0">개 <small>(최대 7개)</small></li>
+                    <li><label><input type="checkbox" name="product" value="P_3">상품3</label><input type="number" name="cnt3" value="1" max="10" min="0">개 <small>(최대 10개)</small></li>
+                    <li><label><input type="checkbox" name="product" value="P_4">상품4</label><input type="number" name="cnt4" max="7"  min="0">개 <small>(최대 7개)</small></li>
+                </ul>
+                <h4>포장 선택</h4>
+                <ul>
+                    <li><label><input type="radio" name="pack" value="Yes">선물 포장</label></li>
+                    <li><label><input type="radio" name="pack" value="No">선물 포장 안 함</label></li>
+                </ul>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice31</title>
+        <script>
+            var ndata1=[19, 38, 67, 26, 55, 24, 53, 12, 31]; 
+            var ndata2=[132, 2, 41, 123, 45, 1234, 6, 29, 4567]; 
+            var kdata=['서울', '부산', '구포', '대구', '인천']; 
+            document.write("수치 정렬1 : " + ndata1.sort() + "<p/>");
+            document.write("수치 정렬2 : " + ndata2.sort() + "<p/>");
+            document.write("수치 정렬3 : " + ndata2.sort(function(a, b) {return a - b;}) + "<p/>");
+            document.write("한글 정렬 : " + kdata.sort() + "<p/>");
+
+            var nums = [1, 2, 3];
+            var chars = ["a", "b", "c", "d"];
+            // 두 개의 배열 합치기
+            var numsChars = nums.concat(chars);
+            document.write("nums에 chars 합치면 : ", numsChars);
+            document.write("<br>");
+
+            var nums = [1, 2, 3];
+            var chars = ["a", "b", "c", "d"];
+            // 배열 내의 요소 합치기
+            var string2 = chars.join('/');
+            document.write("/ 구분자 지정 : ", string2);
+
+            var data=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+            var sum=0;
+            function addArr(value) {
+            sum+=value; 
+            }
+            data.forEach(addArr); 
+            document.write("<br>배열데이터 합 :" + sum + "<p/>");
+
+            var data=[10, 20, 30, 40, 30, 60, 70, 30, 90,100]; 
+            document.write("배열 데이터 : [" + data + "]<p/>");
+            document.write("처음부터 검색한 30의 인덱스 : " + 
+            data.indexOf(30) + "<p/>");
+            document.write("마지막에서 검색한 30의 인덱스 : " + 
+            data.lastIndexOf(30) + "<p/>");
+            document.write("세 번째부터 검색한 30의 인덱스 : " + 
+            data.indexOf(30, 3) + "<p/>");
+            document.write("처음부터 검색한 300의 인덱스 : " + 
+            data.indexOf(300) + "<p/>");
+
+            var nums = [1, 2, 3];
+            var ret1 = nums.push(4, 5); 
+            document.write("length: ", ret1, " | 배열: ",nums); 
+            document.write("<br>");
+            var ret2 = nums.unshift(0); 
+            document.write("length: ", ret2, " | 배열 : ", nums);
+
+            var chars = ["a", "b", "c", "d"];
+            var pop1 = chars.pop(); 
+            document.write("<br>꺼낸 요소: ", pop1, " | 배열: ", chars); 
+            document.write("<br>");
+            var pop2 = chars.shift(); 
+            document.write("꺼낸 요소: ", pop2, " | 배열: ", chars);
+
+            var numbers = [1, 2, 3, 4, 5];
+            var newNumbers = numbers.splice(2);
+            document.write("<br>반환된 배열: " + newNumbers + "<br>" );
+            document.write("변경된 배열: " + numbers );
+
+            var study = ["html", "css", "web", "jquery"];
+            var newStudy = study.splice(2,1);
+            document.write("<br>반환된 배열: " + newStudy + "<br>");
+            document.write("변경된 배열: " + study);
+
+            var newStudy2 = study.splice(2, 1, "js");
+            document.write("<br>반환된 배열: " + newStudy2 + "<br>");
+            document.write("변경된 배열: " + study + "<br>");
+
+            var colors = ["red", "green", "blue", "white", "black"];
+            var colors2 = colors.slice(2); //인덱스 2부터 끝까지
+            document.write(colors2);
+
+            var colors = ["red", "green", "blue", "white", "black"];
+            var colors3 = colors.slice(2,4); // 인덱스 2,3
+            document.write("<br>" + colors3);
+
+            var data=[[10, 20, 30, 40, 0], [60, 70, 80, 90, 0]];
+            document.write("<br>" + data + "<br>");
+            data[0][4]=50; 
+            data[1][4]=100; 
+            document.write("2차원 배열 첫 번째 데이터 : " + data[0][0] + "<br>");
+            document.write("2차원 배열 마지막 데이터 : " + data[1][4] + "<br>");
+            document.write("2차원 배열 행 길이 : " + data.length + "<br>");
+            document.write("2차원 배열 열 길이 : " + data[0].length + "<br>");
+            for(var x=0; x<data.length; x++) {
+            for(var y=0; y<data[x].length; y++) {
+            document.write(data[x][y] + " ");
+            }
+            document.write("<br>");
+            }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

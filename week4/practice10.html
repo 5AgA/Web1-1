@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배송정보</title>
+</head>
+<body>
+    <form name="f4", method="post", action="send.jsp">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label>이 름 <input type="text" name="userName" required></label></li>
+                <li><label>배송 주소 <input type="text" name="addr" size="40" required></label></li>
+                <li><label>이메일 <input type="email" name="mail" size="30"></label></li>
+                <li><label>연락처 <input type="tel" name="phone" size="30" required placeholder="하이픈(-)을 빼고 입력하세요"></label></li>
+                <li><lable>배송일 <input type="date" name="d_day"><small> (주문일로부터 최소 3일 이후)</small></lable></li>
+                <li><lable>메모 <textarea cols="40" rows="3"></textarea></lable></li>
+            </ul>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </fieldset>
+    </form>
+</body>
+</html>

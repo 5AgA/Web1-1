@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제1 나의 소개</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            overflow:auto;
+            border: 1px solid black;
+        }
+
+        section {
+            border: 3px dotted black;
+            width: 270px;
+            height:240px;
+            border-radius: 50px;
+            padding: 15px 0 0 20px;
+            overflow:auto;
+        }
+
+        h3 {
+            padding-left: 40px;
+            padding-top: 5px;
+        }
+
+        p {
+            padding-top: 5px;
+        }
+        
+        img {
+            float: left;
+        }
+       
+        </style>
+</head>
+<body>
+    <div id="container">
+        <section>
+            <img src="images/note.png">
+            <h3>Who am I?</h3>
+            <p>프런트엔드 웹 기술(Front-end Web Tech.)에 관심이 많습니다.<br>현재 학교에서 학생들을 가르치고 있다.</p>
+        </section>
+        <section>
+            <img src="images/note.png">
+            <h3>좌우명</h3>
+            <p>우리가 이룬 것만큼, 이루지 못한 것도 자랑스럽습니다.(I'm as proud of what we don't do as Iam of what we do.)<br>by Steve Jobs</p>
+        </section>
+        <section>
+            <img src="images/note.png">
+            <h3>관심 및 선호</h3>
+            <ul>
+                <li>좋아하는 것</li>
+                <ol>
+                    <li>책 읽기</li>
+                    <li>커피 만들기</li>
+                    <li>보드 게임하기</li>
+                </ol>
+                <li>하고 싶은 것</li>
+                <ol>
+                    <li>여행 가기</li>
+                    <li>영화 보기</li>
+                </ol>
+            </ul>
+        </section>
+        <section>
+            <img src="images/note.png">
+            <h3>Future</h3>
+            <p>실버 프로젝트 카페 만들어서 IT와 관련된 다양한 교육을 실버를 대상으로 하고 싶다</p>
+        </section>
+
+
+    </div>
+</body>
+</html>

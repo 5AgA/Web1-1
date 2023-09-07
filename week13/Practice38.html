@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Window 객체</title>
+    <script>
+        function openCenter(doc, name, width, height)
+        {
+            var left = (screen.availWidth-width) / 2;
+            var top = (screen.availHeight-height) / 2;
+            var set = "left=" + left + ",top=" + top + ",width=" + width + ",height=" + height;
+            window.open(doc, name, set);
+        }
+        function goBack()
+        {
+            history.back();
+        }
+        function goForward()
+        {
+            history.forward();
+        }
+    </script>
+</head>
+<body onload="openCenter('notice.html','pop', 300, 300)">
+    <input type="button" value="Back" onclick="goBack()">
+    <input type="button" value="Forward" onclick="goForward()">
+    <p>팝업 창이 화면 가운데에 표시됩니다</p>
+    <button onclick="location.replace('http://www.naver.com')">네이버 페이지로 변경</button>  
+
+    <script>
+        document.write("<p><b>location.href : </b>" + location.href + "</p>");
+        document.write("<p><b>location.host : </b>" + location.host + "</p>");
+        document.write("<p><b>location.protocol : </b>" + location.protocol + "</p>");
+    </script>
+</body>
+</html> 

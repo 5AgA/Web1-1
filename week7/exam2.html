@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <style>
+        div {
+            border: 10px black dashed;
+            width: 200px;
+            height: 200px;
+            display: left;
+            margin: 10px;
+            padding: 10px;
+        }
+        div:first-child {
+            background-clip: border-box;
+            border-color: white;
+            background-color:red;
+        }
+        #box2 {
+            background-image: url("./bg2.png");
+            background-repeat: repeat-x;
+            background-position: right bottom;
+            background-size:contain;
+        }
+        .box3 {
+            background-image: url("./bg2.png");
+            background-repeat: repeat-x;
+            background-position: center center;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+        #box4 {
+            background: radial-gradient(circle at 10% 10%, green, yellow, orange );
+        }        
+    </style>
+</head>
+<body>
+    <div>box1</div>
+    <div id="box2">box2</div>
+    <div class="box3">box3</div>
+        <ul>
+            <li>1</li>
+            <li></li>
+            <li></li>
+            <li>5</li>
+            <li></li>
+            <li></li>
+            <li>7</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    <div id="box4">box4</div>
+</body>
+</html>

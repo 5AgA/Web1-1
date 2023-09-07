@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 연습</title>
+</head>
+<body>
+    <script>
+        for (var i = 1; i <= 6; i++)
+            document.write("<h" + i + ">안녕하세요</h" + i + ">");
+
+        var i = 5;
+        for ( ; i >= 1; ) 
+        {
+            document.write("<h" + i + ">인터넷프로그래밍</h" + i + ">");
+            i--;
+        }
+
+        let n = parseInt(prompt("정수를 입력하시오", "12"));
+        let msg = "약수 리스트: ";
+        for (var i = 1; i <= n; i++)
+        {
+            if (n % i == 0)
+                msg += i + " ";
+        }
+        document.write(msg + "<br><hr>");
+
+        var datas = [];
+        var num = parseInt(prompt("정수를 입력하시오", ""));
+
+        while (num != -1)                                             //센티널 값
+        {
+            datas.push(num);                                         //push() 배열에 데이터 추가
+            num = parseInt(prompt("정수를 입력하시오", ""));
+        }
+        for (var i = 0; i < datas.length; i++);
+            document.write(datas[i] + " ");
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice26</title>
+    <style>
+        body {
+            margin: auto;
+            margin-top: 10px;
+        }
+        p {
+            margin: auto;
+            font-size: large;
+            text-align: center;
+            padding-top: 15px;
+            border: 1px black solid;
+            width: 300px;
+            height: 40px;
+            margin-bottom: 0px;
+            display:flex;
+            flex-direction: column;
+            background-color: lightgreen;
+        }
+        p:nth-of-type(2) {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var i = 1;
+            var x = parseInt(Math.floor(Math.random() * 50));
+            if (x == 0)
+                x++;
+
+            var y = parseInt(prompt("추측한 수는"));
+        function quiz()
+        {
+            while (y != x)
+            {
+                if (y > x)
+                {
+                    alert("더 작은 수를 말하시오");
+                    y = parseInt(prompt("추측한 수는"));
+                    i++;
+                }
+                else if (y < x)
+                {
+                    alert("더 큰 수를 말하시오");
+                    y = parseInt(prompt("추측한 수는"));
+                    i++;
+                }
+                else if (y == x)
+                {
+                    break;
+                }
+            }
+        }
+        quiz();
+        document.write("<p>정답은 " + y + "</p>");
+        document.write("<p>시도횟수는 " + i + "번</p>");
+    </script>
+
+</body>
+</html>

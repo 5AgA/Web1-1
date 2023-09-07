@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box { 
+            width: 200px; 
+            height: 300px; 
+            background-color: yellow;
+            border: 1px solid red;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        var n = 0;
+        $(function(){
+            $("div").mouseenter(function(){
+                $("div").addClass("box");
+                $("p:first").html("<h3>마우스 포인트 들어옴</h3>");
+                $("p:last").text(++n);
+            });
+            $("div").mouseleave(function(){
+                $(this).removeClass("box");
+                $(this).css({"color": "red",
+                        "font-size": "20px",
+                        "font-family": "궁서체"});
+                $("p:first").html("<h3>마우스 포인트 나옴</h3>");
+            });
+            alert($("p:first").html());
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>jQuery</p>
+        <p>방문횟수: </p>
+    </div>
+    <button>스타일 적용</button>
+</body>
+</html>

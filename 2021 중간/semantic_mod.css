@@ -1,0 +1,22 @@
+<style>
+ hr {width: 380px}
+ #wrapper {width: 600px;}
+ header {height: 130px; background: blue;}
+ hgroup h1 {color: white; padding: 10px 0 0 20px;}
+ hgroup h5 {color: white; padding-left: 20px;}
+
+ nav {width: 600px; height: 34px; background:skyblue; margin-left: 0px;}
+ nav li {float: left; list-style-type:none; padding: 0 20px;}
+
+ section {width:400px; background: #CCC; margin-top: -5px;}
+ hgroup h2 { padding: 10px 0 0 10px;}
+ article {width:400px; background: #CCC;}
+ article p {padding: 10px;}
+
+ aside {width:200px; height: 248px; background: #666; float:right;margin-top: 7px;}
+ hgroup h3 {color: #fff; padding: 10px 0 0 10px;}
+ aside article {width:200px; background: #666; color:white}
+ 
+ footer {height: 40px; background: darkcyan; margin-top: -16px;}
+ footer p {color: white; padding: 10px 0 0 10px;}
+ </style>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice24</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>3의 배수 찾기</h1>
+    
+    <script>
+        var n = parseInt(prompt("몇 까지 3의 배수를 찾을까요?"));
+        var i = 1;
+
+        for (; ; i++)
+        {
+            if (3 * i > n)
+            break;
+            document.write( 3 * i + ", ");
+        }
+
+        document.write("<br>");
+        document.write("<h4 style = 'color: red;'>" + n + "까지의 3의 배수의 갯수: " + (i-1) + "<br>" + "</h4>");
+    </script>
+</body>
+</html>
